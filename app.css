@@ -1,0 +1,66 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.row {
+  overflow: hidden;
+  clear: both;
+  width: 50%;
+}
+
+.row1, .row2, .row3 {
+  width: 33.33%;
+  height: 50px;
+  float: left;
+  display: inline-block;
+}
+
+.row1.col1 {
+  border-right: black solid 1px;
+  border-bottom: black solid 1px;
+}
+.row1.col2 {
+  border-bottom: black solid 1px;
+}
+.row1.col3 {
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+}
+.row2.col1 {
+  border-right: black solid 1px;
+}
+.row2.col2 {
+}
+.row2.col3 {
+  border-left: black solid 1px;
+}
+.row3.col1 {
+  border-right: black solid 1px;
+  border-top: black solid 1px;
+}
+.row3.col2 {
+  border-top: black solid 1px;
+}
+.row3.col3 {
+  border-left: black solid 1px;
+  border-top: black solid 1px;
+}
+
+.clicked {
+  position: relative;
+}
+
+.element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  height: 100%;
+}
+
+.winner {
+  background-color: green;
+}
+.loser {
+  background-color: grey;
+}
